@@ -50,3 +50,11 @@ L --> Loop
 --> CJS (commonjs) 2008 we are ussing CJS
 
 --> ECM script modules 2015 ()
+
+# what is node modulde 
+
+module are function only which we can export and use diffrent file
+
+task 1) appned fole
+task 2) os module
+task 3) cryto module
