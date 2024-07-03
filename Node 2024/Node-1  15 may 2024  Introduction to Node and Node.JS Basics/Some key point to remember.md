@@ -1,5 +1,4 @@
 cover in the Live session
-
 # Introduction to Node and Node.JS Basics
 # Backend Development Notes
 # Client-Server Model
@@ -17,5 +16,14 @@ cover in the Live session
 > SSPL  (Server side Programming langrage)
 > UTF-8
 > OS>CPUS()
+> ESM (ecma script module)
+> CJS ()
 > appendfile --> appendfilesync
 > cryto
+> fs
+> os
+
+different different types of module like 
+> inbuilt --> fs, os
+> Custom --> sumModule
+> external module --> npm

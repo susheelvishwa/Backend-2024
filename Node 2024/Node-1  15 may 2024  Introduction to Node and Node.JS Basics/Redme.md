@@ -380,6 +380,9 @@ This flow illustrates how Node.js manages the execution of JavaScript applicatio
   - **Command Prompt**: Indicates that the system is ready to accept a command.
   - **Commands**: Text inputs that tell the computer to perform specific tasks.
   - **Shell**: The interface that processes commands and outputs results (e.g., Bash, PowerShell).
+
+![CLI](./CLI.jpg)
+
 - **Advantages**:
   - Greater control and flexibility over the operating system and applications.
   - Can be faster and more efficient for experienced users.
