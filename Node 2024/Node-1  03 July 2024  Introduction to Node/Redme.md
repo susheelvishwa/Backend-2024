@@ -438,6 +438,9 @@ module.exports = {
 
 ># Modules in Node.js
 
+
+> anything which you export in js is called a module.
+
 ```In Node.js, a module is a code file that's used in a modular JavaScript application for the separation of concerns. Essentially, it's a set of functions you want to include in your application. Node.js has several built-in modules that you can use without any further installation. Additionally, you can create your own modules or import third-party modules via npm (Node Package Manager).```
 
 
@@ -496,10 +499,26 @@ Node.js supports various modules that can be installed for additional functional
 
 ## Types of Modules
 
+># custom modules
+
+Example : sum module (created by you)
+
 ># Internal Modules
 
 - These come bundled with Node.js and are ready to use out of the box.
 - Examples: `fs`, `crypto`, `os`.
+
+Talk About 
+**FS** File system --> Related file
+<!-- fs.readFile(path[, options], callback) -->
+
+      --> read
+      --> write 
+      --> append 
+      --> delete 
+      --> rename
+
+**OS** 
 
 ># External Modules
 

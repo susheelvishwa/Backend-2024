@@ -15,7 +15,7 @@ const div = (a, b) => {
 };
 
 const greetFun = function greet() {
-  console.log("good morning Aankit");
+  console.log("good morning Ankit");
 };
 
 module.exports = {
