@@ -509,8 +509,12 @@ Example : sum module (created by you)
 - Examples: `fs`, `crypto`, `os`.
 
 Talk About 
-**FS** File system --> Related file
+# **FS** File system --> Related file
 <!-- fs.readFile(path[, options], callback) -->
+```
+FS Module in Node.js
+The fs (File System) module in Node.js allows you to work with the file system on your computer. This includes reading, writing, updating, deleting, and renaming files.
+```
 
       --> read
       --> write 
@@ -518,7 +522,31 @@ Talk About
       --> delete 
       --> rename
 
-**OS** 
+# **OS** 
+
+```
+OS Module in Node.js
+The os module in Node.js provides a number of operating system-related utility methods and properties. It is used to interact with the underlying operating system. Here are some of the common functionalities provided by the os module:
+
+
+OS Type
+System Memory
+Free System Memory
+Interfaces
+Architecture
+Getting the Total Amount of System Memory:
+Getting the Hostname:
+
+```
+
+# **crypto**
+
+```
+Crypto Module in Node.js
+The crypto module in Node.js provides cryptographic functionality that includes a set of wrappers for OpenSSL's hash, HMAC, cipher, decipher, sign, and verify functions.
+```
+
+**These modules are essential for performing various tasks in Node.js, and they provide a wide range of functionalities to interact with the operating system, perform cryptographic operations, and manage the file system.**
 
 ># External Modules
 

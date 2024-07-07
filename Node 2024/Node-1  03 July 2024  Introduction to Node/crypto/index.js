@@ -33,11 +33,22 @@
 // console.log(encrypted);
 
 // Asynchronous
+// const {
+//   randomBytes,
+// } = require('node:crypto');
+
+// randomBytes(2, (err, buf) => {
+//   if (err) throw err;
+//   console.log(`${buf.length} bytes of random data: ${buf.toString('hex')}`);
+// });
+
+
+// Asynchronous
 const {
-  randomBytes,
+  randomInt,
 } = require('node:crypto');
 
-randomBytes(2, (err, buf) => {
+randomInt(3,10, (err, n) => {
   if (err) throw err;
-  console.log(`${buf.length} bytes of random data: ${buf.toString('hex')}`);
+  console.log(`Random number: ${n}`);
 });
