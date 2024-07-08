@@ -95,13 +95,16 @@ Open port numbers are those not reserved and can be used based on the needs of a
 - Applications or services running on non-standard ports might choose numbers in the dynamic/private range for communication.
 
 
->command to initialize a backend project
->nodemon node mon=> monitor
-
-npm init --y
-npm i nodemon
-
 --------------------------------------------------------------------------------
+problem is : again and again using if else if else 
+
+solution is : express
+
+why we use express because of 
+![express](./image8.png)
+there a a fig file using like if else if else so for optimize propose we use express
+
+# Express is a backend web application framework for building RESTful APIs with Node.js
 
 ># Express.js Overview
 
