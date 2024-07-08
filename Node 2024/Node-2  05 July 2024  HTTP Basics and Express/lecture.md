@@ -35,17 +35,8 @@ two thing in our API'
  res.send => res.write and res.end()
 
 
-Restfull api : Restful API: HTTPS methods and they perform operations on thel resources (CRUD)
+Restful api : Restful API: HTTPS methods and they perform operations on the resources (CRUD)
 
-
-Restfull api : Restful API: HTTPS methods and they perform operations on thel resources (CRUD)
-
-can u make a .md file for that
-ChatGPT
-Sure, here is a markdown file detailing RESTful APIs, HTTPS methods, and their operations on resources (CRUD).
-
-markdown
-Copy code
 # RESTful API: HTTPS Methods and CRUD Operations
 
 ## Overview
