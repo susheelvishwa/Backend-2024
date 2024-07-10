@@ -10,6 +10,10 @@ server.get("/home", (req, res) => {
   res.send("welcome to home page");
 });
 
+server.get("/about", (req, res) => {
+  res.send("welcome to about page");
+});
+
 server.get("/user-data", (req, res) => {
   try {
     const data = fs.readFileSync("./db.json", "utf-8");
