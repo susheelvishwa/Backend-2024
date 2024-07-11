@@ -1,8 +1,8 @@
-# Agenda  : HTTP Basics & Express
+># Agenda  : HTTP Basics & Express
 
-# HTTP Methods and Error Handling
+># HTTP Methods and Error Handling
 
-## HTTP Methods
+>## HTTP Methods
 
 In RESTful APIs, different HTTP methods correspond to different actions:
 
@@ -21,7 +21,7 @@ Each method corresponds to a specific CRUD (Create, Read, Update, Delete) operat
    **PATCH** : Update when you want to update the particular field of add n ne field
 - **DELETE** -> Delete
 
-## Error Handling
+>## Error Handling
 
 When dealing with errors or issues in a system, different actions can be taken depending on the type of issue:
 
@@ -34,9 +34,9 @@ This approach ensures that minor issues can be fixed quickly with patches, while
 
 -----------------------------------------------------------------------------
 
-# URL Differences Comparison
+># URL Differences Comparison
 
-## Domain and Accessibility
+>## Domain and Accessibility
 
 - **https://google.com**: This URL points to Google's public website, accessible globally.
 - **http://localhost:3000/**: This URL points to a local server (localhost) on port 3000, accessible only on your machine.
@@ -61,11 +61,11 @@ In summary, [https://google.com](https://google.com) is publicly accessible and 
 
 -----------------------------------------------------------
 
-# Port Number Categories
+># Port Number Categories
 
-## Reserved Ports
+>## Reserved Ports
 
-### Well-Known Ports (0-1023)
+>### Well-Known Ports (0-1023)
 - Reserved for system services or commonly used protocols.
 - Examples:
   - Port 80: HTTP (Hypertext Transfer Protocol)
@@ -77,7 +77,7 @@ In summary, [https://google.com](https://google.com) is publicly accessible and 
   - Port 143: IMAP (Internet Message Access Protocol)
   - Port 53: DNS (Domain Name System)
 
-### Registered Ports (1024-49151)
+>### Registered Ports (1024-49151)
 - Assigned by IANA (Internet Assigned Numbers Authority) to specific services or processes by request.
 - Examples:
   - Port 3306: MySQL Database
@@ -85,10 +85,10 @@ In summary, [https://google.com](https://google.com) is publicly accessible and 
   - Port 27017: MongoDB Database
   - Port 8080: HTTP Alternate (commonly used for web servers during development)
 
-### Dynamic/Private Ports (49152-65535)
+>### Dynamic/Private Ports (49152-65535)
 - Available for dynamic assignment and temporary use by client applications.
 
-## Open Port Numbers
+>## Open Port Numbers
 
 Open port numbers are those not reserved and can be used based on the needs of applications or services. For example:
 - Ports like 3000, 5000, 8000, etc., often used by developers for local testing and development servers.
@@ -96,19 +96,108 @@ Open port numbers are those not reserved and can be used based on the needs of a
 
 
 --------------------------------------------------------------------------------
+># Web Request Components Explained
+```
+This document explains various components of a web request using an example of fetching user information from an API endpoint.
+```
+
+## Example Scenario
+
+Suppose you want to fetch user information from an API endpoint: `https://api.example.com/users?id=123`.
+
+### Components
+
+1. **Query**:
+   - A query in the context of a web request refers to the part of the URL that contains data to be sent to the server. It's the part of the URL after the `?` character.
+   - **Example**: In the URL `https://api.example.com/users?id=123`, the query is `id=123`.
+
+2. **Parameter (Para)**:
+   - Parameters are the key-value pairs in the query string. They provide additional information to the server about what data to retrieve or how to handle the request.
+   - **Example**: In the query string `id=123`, `id` is the parameter name, and `123` is its value.
+
+3. **URL (Uniform Resource Locator)**:
+   - A URL is the address used to access a resource on the internet. It includes the protocol, domain name, and path to the resource.
+   - **Example**: `https://api.example.com/users?id=123` is the URL.
+
+4. **Body**:
+   - The body of a request contains the data sent to the server. It is typically used in POST, PUT, or PATCH requests where data needs to be submitted or updated.
+   - **Example**: If you're sending a POST request to create a new user, the body might contain JSON data like `{"name": "John", "email": "john@example.com"}`.
+
+5. **Request Object (req object)**:
+   - In web development, especially in backend frameworks like Express.js (Node.js), the request object represents the HTTP request and contains properties for the query string, parameters, body, HTTP headers, etc.
+   - **Example**: In Express.js, you might access the request object in a route handler like this:
+     ```javascript
+     app.get('/users', (req, res) => {
+       const userId = req.query.id; // accessing the query parameter 'id'
+       // process the request and send a response
+     });
+     ```
+
+6. **HTTP (HyperText Transfer Protocol)**:
+   - HTTP is a protocol used for transmitting hypertext (HTML) between a client and server. It is the foundation of any data exchange on the Web.
+   - **Example**: `http://example.com` uses the HTTP protocol.
+
+7. **HTTPS (HyperText Transfer Protocol Secure)**:
+   - HTTPS is an extension of HTTP. It uses SSL/TTLS to encrypt the data transferred between the client and server, ensuring a secure connection.
+   - **Example**: `https://example.com` uses the HTTPS protocol, ensuring that the data is encrypted and secure.
+
+8. **Domain Name**:
+   - The domain name is the part of the URL that specifies the website's address.
+   - **Example**: In `https://api.example.com/users?id=123`, `example.com` is the domain name.
+
+>### Putting It All Together
+
+When you make a request to `https://api.example.com/users?id=123`, here is what happens:
+
+1. **URL**: The browser or client constructs the URL `https://api.example.com/users?id=123`.
+2. **Domain Name**: `example.com` is resolved to an IP address by DNS (Domain Name System).
+3. **Protocol**: The request uses the HTTPS protocol to ensure the connection is secure.
+4. **Query**: The query string `id=123` is appended to the URL, indicating which user's information is being requested.
+5. **Request Object**: On the server, the request object (`req` in Express.js) contains the query parameters, which can be accessed using `req.query.id`.
+6. **Body**: If it were a POST request, the body would contain data sent to the server, but in this GET request, there's no body.
+7. **HTTP/HTTPS**: The data is transmitted using the HTTPS protocol, ensuring the data is encrypted and secure.
+
+>### Code Example
+
+Here’s a simple Express.js server that handles this request:
+
+```javascript
+const express = require('express');
+const app = express();
+
+app.get('/users', (req, res) => {
+  const userId = req.query.id; // Extracting the query parameter
+  // Simulate fetching user information from a database
+  const user = { id: userId, name: 'John Doe', email: 'john@example.com' };
+  res.json(user); // Sending the user information as a JSON response
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+```
+
+---
+
+
+># Express
+
 problem is : again and again using if else if else 
 
 solution is : express
 
 why we use express because of 
 ![express](./image8.png)
+
 there a a fig file using like if else if else so for optimize propose we use express
 
-# Express is a backend web application framework for building RESTful APIs with Node.js
+>## Express is a backend web application framework for building RESTful APIs with Node.js
 
 ># Express.js Overview
 
+```
 Express.js is a minimal and flexible Node.js web application framework that simplifies the process of building server-side applications. It provides a robust set of features for handling routing, middleware, and HTTP requests and responses.
+```
 
 ## Key Concepts
 
