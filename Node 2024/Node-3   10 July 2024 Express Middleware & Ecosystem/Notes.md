@@ -4,11 +4,10 @@ sever.use(express.jaon()) what it mean
 
 # Express Middleware (ITS A CONCEPT)
 
->node has some inbuilt modules fs os crypto http path
-
-1. node has external modules also npm nodemon express
-2. we can make custom modules in node : sum function
-3. express has some inbuilt middleware (ecosystem of middlewares)
+1. node has some inbuilt modules fs os crypto http path
+2. node has external modules also npm nodemon express
+3. we can make custom modules in node : sum function
+# express has some inbuilt middleware (ecosystem of middlewares)
 
 express has some inbuilt middleware (ecosystem of middlewares)
 1. internat
