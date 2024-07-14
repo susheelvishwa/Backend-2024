@@ -1,6 +1,6 @@
 we descus here today
 
-sever.use(express.jaon()) whta it mean
+sever.use(express.jaon()) what it mean
 
 # Express Middleware (ITS A CONCEPT)
 
