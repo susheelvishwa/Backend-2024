@@ -1,20 +1,28 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+const server = express();
+const fs = require("fs")
+
+const PORT = 3000;
 const validationMiddleware = require("./middleware/validation");
 
-const app = express();
-const PORT = 3000;
+server.use(express.json());
 
-app.use(bodyParser.json());
-
-app.post("/home", validationMiddleware, (req, res) => {
-  res.status(200).send("data received");
+server.post("/storeData",validationMiddleware, (req, res) => {
+  console.log(req.body);
+  const data = JSON.parse(fs.readFileSync("./db.json", "utf-8"));
+  data.users.push(req.body);
+  fs.writeFileSync("./db.json", JSON.stringify(data));
+  res.json({ message: "signup successful" });
 });
 
-app.use((req, res) => {
+server.use((req, res) => {
   res.status(404).send("Not Found");
 });
 
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+
+
+  
