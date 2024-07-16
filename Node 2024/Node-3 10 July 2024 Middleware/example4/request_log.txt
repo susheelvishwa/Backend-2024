@@ -1,0 +1,13 @@
+
+ The method is GET and the api endpoint id /about
+                        and the time is Mon Jul 15 2024 11:40:34 GMT+0530 (India Standard Time)
+ The method is POST and the api endpoint id /home
+                        and the time is Mon Jul 15 2024 11:41:53 GMT+0530 (India Standard Time)
+ The method is GET and the api endpoint id /conatct
+                        and the time is Mon Jul 15 2024 11:42:00 GMT+0530 (India Standard Time)
+ The method is GET and the api endpoint id /contact
+                        and the time is Mon Jul 15 2024 11:42:07 GMT+0530 (India Standard Time)
+ The method is GET and the api endpoint id /about
+                        and the time is Mon Jul 15 2024 11:42:12 GMT+0530 (India Standard Time)
+ The method is GET and the api endpoint id /login
+                        and the time is Mon Jul 15 2024 11:42:17 GMT+0530 (India Standard Time)
