@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     });
 
     data.forEach((el) => {
-      res.write(`<a href="${el}">${el}</a><br>`);
+      res.write(`<b><a href="${el}">${el}</a><br></b>`);
     });
     res.end();
   } else if (req.url != "/favicon.ico") {
