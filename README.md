@@ -20,4 +20,15 @@
 # 6. Http verbs
 
 
+> # Lecture 3 : Express Middleware & Ecosystem
 
+# What is a Middleware?
+# Where does a middleware exist?
+# Middleware Analogy
+# Analogy Explanation
+# how to use middleware in the express
+# Types of Middleware
+## Inbuilt Middleware
+## Custom Middleware
+## Community Middleware
+# Understanding `express.json()` Middleware in Express.js
