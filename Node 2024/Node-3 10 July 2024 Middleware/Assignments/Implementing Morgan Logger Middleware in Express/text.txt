@@ -1,0 +1,5 @@
+GET /home 200 24 - 1.785 ms Tue, 16 Jul 2024 16:06:47 GMT HTTP/1.1
+GET /about 200 39 - 3.245 ms Tue, 16 Jul 2024 16:07:18 GMT HTTP/1.1
+POST /add-user 201 37 - 0.475 ms Tue, 16 Jul 2024 16:07:35 GMT HTTP/1.1
+PUT /user/:id 201 51 - 0.614 ms Tue, 16 Jul 2024 16:07:49 GMT HTTP/1.1
+DELETE /user/:id 200 51 - 0.552 ms Tue, 16 Jul 2024 16:08:03 GMT HTTP/1.1
