@@ -9,7 +9,6 @@
 # Asynchronous Programming in Node.js
 # Error Handling in Node.js
 
-
 > # Lecture 2 :  HTTP Basics & Express
 # 1. What is a server
 # 2. HTTP and HTTPS
@@ -19,9 +18,7 @@
 # 6. Bandwidth
 # 6. Http verbs
 
-
 > # Lecture 3 : Express Middleware & Ecosystem
-
 # What is a Middleware?
 # Where does a middleware exist?
 # Middleware Analogy
@@ -32,3 +29,12 @@
 ## Custom Middleware
 ## Community Middleware
 # Understanding `express.json()` Middleware in Express.js
+
+> # Lecture 4 : Introduction To Databases & MongoDB
+# Introduction to Databases
+# Types of Databases: SQL and NoSQL
+# Why MongoDB?
+# MongoDB Hierarchy and Book Details Example
+# Database Collections and Documents
+# CRUD Operations on Documents
+# Practical Example
