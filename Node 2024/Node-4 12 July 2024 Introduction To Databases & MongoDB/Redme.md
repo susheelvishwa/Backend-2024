@@ -226,6 +226,7 @@ This hierarchy and example illustrate how MongoDB organizes data from databases 
   - **Purpose:** Returns the total number of documents in the specified collection.
 
 
+
 ># CRUD Operations on Documents
 
 ![CRUD Operations on Documents](./img/image4.png)
@@ -311,6 +312,10 @@ Remove multiple documents that match certain criteria.
 ```shell
 db.myCollection.deleteMany({ age: 30 })
 ```
+
+># Basic Command
+
+![CRUD Operations on Documents](./img/image6.png)
 
 >## Practical Example
 
