@@ -228,6 +228,8 @@ This hierarchy and example illustrate how MongoDB organizes data from databases 
 
 ># CRUD Operations on Documents
 
+![CRUD Operations on Documents](./img/image4.png)
+
 CRUD stands for Create, Read, Update, and Delete. These are the four basic operations for managing data in a database. Here’s a detailed explanation of each operation with examples.
 
 >## Create
@@ -358,3 +360,44 @@ Let's walk through a practical example using a library database:
      db.books.deleteMany({ author: "Various Authors" })
      ```
 
+># Comparison & Logical Operators
+
+![Comparison & Logical Operators](/img/image5.png)
+
+
+># CRUD Operations in MongoDB
+
+## CRUD Overview
+
+CRUD stands for Create, Read, Update, and Delete. These are the four basic operations you can perform on data in a database.
+
+### Create (C)
+- **insertOne**: Adds a single document to the collection.
+- **insertMany**: Adds multiple documents to the collection.
+
+### Read (R)
+- **find()**: Retrieves all documents in the collection.
+- **find({filter})**: Retrieves documents that match the specified filter criteria.
+- **findOne**: Retrieves a single document that matches the filter criteria.
+
+### Update (U)
+- **updateOne**: Updates a single document that matches the filter criteria.
+- **updateMany**: Updates multiple documents that match the filter criteria.
+
+### Delete (D)
+- **deleteOne**: Deletes a single document that matches the filter criteria.
+- **deleteMany**: Deletes multiple documents that match the filter criteria.
+
+## Notes
+1. **To update something, we need two things:**
+    - **Filter**: Specifies which document(s) to update, often using fields like `name` or `id`.
+    - **What to update**: Specifies the new values for the fields to be updated.
+
+2. **To delete something, we need one thing:**
+    - **Filter**: Specifies which document(s) to delete, often using fields like `name` or `id`.
+
+## Summary
+- **Create** operations use `insertOne` and `insertMany`.
+- **Read** operations use `find()`, `find({filter})`, and `findOne`.
+- **Update** operations use `updateOne` and `updateMany`, requiring both a filter and the update details.
+- **Delete** operations use `deleteOne` and `deleteMany`, requiring only a filter.
