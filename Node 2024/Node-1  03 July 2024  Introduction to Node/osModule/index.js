@@ -1,6 +1,6 @@
 const os = require('os')
-// console.log(os.cpus())
-// console.log(os.totalmem());
+console.log(os.cpus())
+console.log(os.totalmem());
 
 // 1. Getting the Hostname:
 console.log("hostname : ", os.hostname());

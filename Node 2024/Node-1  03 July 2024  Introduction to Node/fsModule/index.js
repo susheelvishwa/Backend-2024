@@ -1,7 +1,7 @@
 // 1. Reading a File:
 
 // const fs = require("fs");
-// fs.readFile("example.txt", "utf8", (err, data) => {
+// fs.readFile("newname.txt", "utf8", (err, data) => {
 //   if (err) throw err;
 //   console.log(data);
 // });
@@ -19,7 +19,7 @@
 // 3. Appending to a File:
 
 // const fs = require("fs");
-// fs.appendFile("example.txt", " ok meko lagta he tum shayad save ho ok me chalta hu ", (err) => {
+// fs.appendFile("newname.txt", " ok meko lagta he tum shayad save ho ok me chalta hu ", (err) => {
 //   if (err) throw err;
 //   console.log("File has been updated!");
 // });
@@ -35,9 +35,9 @@
 
 // 5. Renaming a File:
 
-const fs = require("fs");
-fs.rename("example.txt", "newname.txt", (err) => {
-  if (err) throw err;
-  console.log("File renamed!");
-});
+// const fs = require("fs");
+// fs.rename("example.txt", "newname.txt", (err) => {
+//   if (err) throw err;
+//   console.log("File renamed! changed");
+// });
 
