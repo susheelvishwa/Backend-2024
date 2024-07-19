@@ -367,7 +367,7 @@ Let's walk through a practical example using a library database:
 
 ># Comparison & Logical Operators
 
-![Comparison & Logical Operators](/img/image5.png)
+![Comparison & Logical Operators](./img/image5.pnggit)
 
 
 ># CRUD Operations in MongoDB
