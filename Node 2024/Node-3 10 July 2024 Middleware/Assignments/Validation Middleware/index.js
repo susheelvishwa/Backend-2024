@@ -8,7 +8,7 @@ const validationMiddleware = require("./middleware/validation");
 server.use(express.json());
 
 server.post("/storeData",validationMiddleware, (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   const data = JSON.parse(fs.readFileSync("./db.json", "utf-8"));
   data.users.push(req.body);
   fs.writeFileSync("./db.json", JSON.stringify(data));
