@@ -1,4 +1,10 @@
 ># Introduction to Databases
+>## What is a Database?
+>## Why do we store Data?
+>## Why can't we use data files only?
+>## What is the Solution?
+
+># Introduction to Databases
 
 ![Database](./img/image1.png)
 
@@ -131,6 +137,11 @@ The image also includes an example of a MongoDB document, which showcases its fl
 This example highlights how MongoDB can store various types of data in a single document, making it a versatile choice for different applications.
 
 ---
+
+
+># Basic Command
+
+![CRUD Operations on Documents](./img/image6.png)
 
 ># MongoDB Hierarchy and Book Details Example
 
@@ -313,10 +324,6 @@ Remove multiple documents that match certain criteria.
 db.myCollection.deleteMany({ age: 30 })
 ```
 
-># Basic Command
-
-![CRUD Operations on Documents](./img/image6.png)
-
 >## Practical Example
 
 Let's walk through a practical example using a library database:
@@ -406,3 +413,5 @@ CRUD stands for Create, Read, Update, and Delete. These are the four basic opera
 - **Read** operations use `find()`, `find({filter})`, and `findOne`.
 - **Update** operations use `updateOne` and `updateMany`, requiring both a filter and the update details.
 - **Delete** operations use `deleteOne` and `deleteMany`, requiring only a filter.
+
+this is all about CRUD operations in mongoDB
