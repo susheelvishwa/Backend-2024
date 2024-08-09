@@ -1,4 +1,4 @@
-const { randomInt } = require("node:crypto");
+const crypto = require("crypto");
 const process = require("process");
 
 console.log(process.argv);
@@ -69,7 +69,7 @@ function tan(a) {
 }
 
 function generateRandomInt(a, b) {
-  randomInt(a, b, (err, n) => {
+  crypto.randomInt(a, b, (err, n) => {
     if (err) throw err;
     console.log(`Random number: ${n}`);
   });

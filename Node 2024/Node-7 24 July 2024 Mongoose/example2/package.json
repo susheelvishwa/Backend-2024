@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "example1": "file:",
     "express": "^4.19.2",
     "mongoose": "^8.5.1",
     "node": "^20.16.0",
