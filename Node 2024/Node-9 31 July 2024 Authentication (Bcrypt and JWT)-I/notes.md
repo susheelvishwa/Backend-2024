@@ -80,11 +80,68 @@ In web applications, authentication works similarly. Instead of fingerprints, us
 7. **Server Verifies Token**
    - **Action**: The server verifies the token to ensure it is valid and has not expired.
    - **Result**: If valid, the server processes the request and returns the requested resource. If invalid, it returns an authentication error.
-   
+
 ---
 
 - [Passport.js](http://www.passportjs.org/) - Popular authentication middleware for Node.js
 - [JSON Web Tokens (JWT)](https://jwt.io/)
+
+---
+
+># Understanding Authorization
+
+## 1. Authentication: Who Are You?
+
+Authentication is the process of verifying who you are. When you log into a system, you provide credentials—usually a username and password—to prove your identity. 
+
+### Example with Prime Video
+
+When you want to use Amazon Prime Video, you start by logging in with your email and password. This login process is the system's way of confirming that you are indeed the person you claim to be. Once authenticated, you are allowed into the platform.
+
+### Real-World Analogy
+
+Imagine entering a secure building. At the entrance, you show your ID card to the security guard. The guard checks your ID to make sure you are who you say you are. If your ID is valid, you’re allowed into the building. This is authentication—it confirms your identity.
+
+## 2. Authorization: What Can You Do?
+
+Authorization comes after authentication and answers the question: "Now that we know who you are, what are you allowed to do?" It determines what resources or actions you have permission to access.
+
+### Example with Prime Video
+
+Once you're logged into Amazon Prime Video, you can browse and watch movies or shows. However, there are certain actions that you cannot perform, such as deleting movies, uploading new content, or altering the platform's settings. These actions require special permissions that only authorized users (like Amazon employees) have.
+
+### Real-World Analogy
+
+Continuing with the building example, after entering, you may only have access to certain areas, like the lobby or meeting rooms, but not to restricted areas like the server room or executive offices. Even though you’re inside the building (authenticated), you need additional permissions (authorization) to access certain parts of it.
+
+## 3. Why is This Important?
+
+Understanding the difference between authentication and authorization is crucial in security:
+
+- **Security Layers**: Just because someone has successfully logged into a system (authenticated) doesn’t mean they should have unrestricted access to all its resources. Authorization ensures that users only have access to what they need to do their job and nothing more, which helps protect sensitive data and functions.
+
+- **Practical Example**: Imagine if any user who logs into Prime Video could delete or change movies—this would be chaotic and insecure. Instead, Amazon controls who has the authorization to perform such actions, ensuring that only qualified personnel can manage the content.
+
+## 4. How They Work Together
+
+- **First Step: Authentication**: The first step is always to authenticate the user. The system needs to know who is trying to access it. This is done through login credentials, biometric data, etc.
+
+- **Second Step: Authorization**: After authentication, the system checks what the authenticated user is allowed to do. This step is based on roles or permissions assigned to the user. For instance, a regular user on Prime Video can stream content but cannot modify it.
+
+## Summary
+
+- **Authentication** verifies your identity.
+- **Authorization** determines what you are allowed to do once your identity is verified.
+
+### Using the Prime Video Example
+
+- **Authentication**: You log in to Prime Video with your username and password.
+- **Authorization**: After logging in, you can watch content, but you cannot modify or delete movies because you don't have the necessary permissions.
+
+This layered approach helps maintain security and ensures that users can only access what they are supposed to within a system.
+
+![Authorization](./img/image1.png)
+
 
 
 
