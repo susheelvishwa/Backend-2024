@@ -1,9 +1,9 @@
 cover in the Live session
-# Introduction to Node and Node.JS Basics
-# Backend Development Notes
+# What is Backend?
+# Backend Till Now: JSON Server
 # Client-Server Model
 # Request-Response Cycle
-# Introduction to Node.js
+# Introduction to Node.js: Definition, Features, and Benefits
 # Ways to Interact with a Computer
 # Importing and Exporting in Node.js
 # The Event Loop in Node.js

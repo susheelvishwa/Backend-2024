@@ -1,6 +1,4 @@
-# Introduction to Node and Node.JS Basics
 # What is Backend?
-# Backend Till Now: JSON Server
 # Client-Server Model
 # Request-Response Cycle
 # Introduction to Node.js: Definition, Features, and Benefits
@@ -9,6 +7,7 @@
 # The Event Loop in Node.js
 # Asynchronous Programming in Node.js
 # Error Handling in Node.js
+# Backend Till Now: JSON Server
 
 *Prerequisites 😛*
 
@@ -103,46 +102,6 @@ The backend is crucial because it forms the backbone of any web application. Its
 - **Limited in Responsiveness**: Unable to respond to user inputs in a meaningful and efficient way.
 
 In summary, the backend is essential for the overall success of a web application, ensuring its functionality, security, and user experience.
-
----
-
-># Backend Till Now: JSON Server
-
-## Overview
-
-**JSON Server** is a popular tool used for mocking REST APIs during development. It provides a quick and easy way to prototype and simulate backend functionality without setting up a full-fledged server. JSON Server is often used for:
-
-- Rapid prototyping
-- Mocking simple REST APIs
-- Testing frontend development without a real backend
-
-## Demerits of JSON Server
-
-While JSON Server is a useful tool for certain development scenarios, it has several limitations that should be considered:
-
-### 1. Limited Functionality
-
-- **Basic CRUD Operations**: JSON Server is well-suited for handling simple Create, Read, Update, and Delete (CRUD) operations.
-- **Complex Scenarios**: It falls short when dealing with more complex backend tasks, such as:
-  - **Authentication**: JSON Server does not support robust user authentication mechanisms.
-  - **Validation**: It lacks built-in support for data validation to ensure data integrity.
-  - **Advanced Querying**: JSON Server does not handle advanced querying or filtering operations effectively.
-
-### 2. Not Suitable for Production
-
-- **Lacks Robustness**: JSON Server is designed primarily for development and testing, not for production use. It lacks the robustness required for real-world applications.
-- **Security Concerns**: Since it is a simple tool, JSON Server does not include the security features needed to protect sensitive data in production environments.
-- **No Scalability**: It is not built to handle high levels of traffic or complex interactions, making it unsuitable for scaling as the application's complexity grows.
-
-### 3. Development-Only Tool
-
-- **Limited Use Case**: JSON Server is primarily a development tool, best suited for quick prototyping and testing. Its capabilities are not aligned with the demands of a full-scale backend.
-- **Inadequate for Large-Scale Applications**: As applications become more complex, the need for efficient data management, concurrency handling, and custom business logic increases. JSON Server does not cater to these needs, making it inadequate for larger, more sophisticated applications.
-
-## Conclusion
-
-While JSON Server is a great tool for development environments, offering simplicity and speed, it is not designed for production use or handling complex backend tasks. Developers should consider these limitations when choosing JSON Server and evaluate alternative solutions for more advanced or production-level requirements.
-
 ---
 
 ># Client-Server Model
@@ -801,3 +760,40 @@ try {
   console.error('An error occurred:', error);
 }
 ```
+
+># Backend Till Now: JSON Server
+
+## Overview
+
+**JSON Server** is a popular tool used for mocking REST APIs during development. It provides a quick and easy way to prototype and simulate backend functionality without setting up a full-fledged server. JSON Server is often used for:
+
+- Rapid prototyping
+- Mocking simple REST APIs
+- Testing frontend development without a real backend
+
+## Demerits of JSON Server
+
+While JSON Server is a useful tool for certain development scenarios, it has several limitations that should be considered:
+
+### 1. Limited Functionality
+
+- **Basic CRUD Operations**: JSON Server is well-suited for handling simple Create, Read, Update, and Delete (CRUD) operations.
+- **Complex Scenarios**: It falls short when dealing with more complex backend tasks, such as:
+  - **Authentication**: JSON Server does not support robust user authentication mechanisms.
+  - **Validation**: It lacks built-in support for data validation to ensure data integrity.
+  - **Advanced Querying**: JSON Server does not handle advanced querying or filtering operations effectively.
+
+### 2. Not Suitable for Production
+
+- **Lacks Robustness**: JSON Server is designed primarily for development and testing, not for production use. It lacks the robustness required for real-world applications.
+- **Security Concerns**: Since it is a simple tool, JSON Server does not include the security features needed to protect sensitive data in production environments.
+- **No Scalability**: It is not built to handle high levels of traffic or complex interactions, making it unsuitable for scaling as the application's complexity grows.
+
+### 3. Development-Only Tool
+
+- **Limited Use Case**: JSON Server is primarily a development tool, best suited for quick prototyping and testing. Its capabilities are not aligned with the demands of a full-scale backend.
+- **Inadequate for Large-Scale Applications**: As applications become more complex, the need for efficient data management, concurrency handling, and custom business logic increases. JSON Server does not cater to these needs, making it inadequate for larger, more sophisticated applications.
+
+## Conclusion
+
+While JSON Server is a great tool for development environments, offering simplicity and speed, it is not designed for production use or handling complex backend tasks. Developers should consider these limitations when choosing JSON Server and evaluate alternative solutions for more advanced or production-level requirements.
