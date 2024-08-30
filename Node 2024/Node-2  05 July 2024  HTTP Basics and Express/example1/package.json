@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev" : "nodemon script.js"
+    "dev": "nodemon script.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "example1": "file:",
     "nodemon": "^3.1.0"
   }
 }
