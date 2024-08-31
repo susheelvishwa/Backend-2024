@@ -1,0 +1,4 @@
+-> Create a registration system:
+-> Details of user name , age, email, password, gender, country, city, contact
+-> Create a userModel
+-> Route for registration and login
