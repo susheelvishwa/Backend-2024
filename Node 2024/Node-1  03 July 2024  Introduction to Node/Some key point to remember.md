@@ -12,6 +12,7 @@ cover in the Live session
 # What is .mjs?
 # What is Dynamic Import?
 # npm (Node Package Manager) and Its Purpose in Node.js
+# Managing Environment Variables in Node.js
 
 
 > ORM
