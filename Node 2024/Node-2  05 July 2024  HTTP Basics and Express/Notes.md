@@ -1,3 +1,11 @@
+# 1. What is a server
+# 2. HTTP and HTTPS
+# 3. Application Layer Protocol
+# 4. Internet Protocol IP
+# 5. SSL
+# 6. Bandwidth
+# 7. Http verbs
+
 ># Agenda  : HTTP Basics & Express
 
 ># HTTP Methods and Error Handling
