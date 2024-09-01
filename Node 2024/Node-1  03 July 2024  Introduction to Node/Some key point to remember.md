@@ -1,6 +1,5 @@
 cover in the Live session
 # What is Backend?
-# Backend Till Now: JSON Server
 # Client-Server Model
 # Request-Response Cycle
 # Introduction to Node.js: Definition, Features, and Benefits
@@ -9,6 +8,10 @@ cover in the Live session
 # The Event Loop in Node.js
 # Asynchronous Programming in Node.js
 # Error Handling in Node.js
+# Backend Till Now: JSON Server
+# What is .mjs?
+# What is Dynamic Import?
+# npm (Node Package Manager) and Its Purpose in Node.js
 
 
 > ORM

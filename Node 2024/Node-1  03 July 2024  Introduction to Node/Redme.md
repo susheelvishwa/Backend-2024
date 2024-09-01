@@ -8,6 +8,9 @@
 # Asynchronous Programming in Node.js
 # Error Handling in Node.js
 # Backend Till Now: JSON Server
+# What is .mjs?
+# What is Dynamic Import?
+# npm (Node Package Manager) and Its Purpose in Node.js
 
 *Prerequisites 😛*
 
@@ -47,29 +50,6 @@
 >## Mongoose
 - Connecting Database to our application
 
------------------------------------------------------------------------------------
-
-># Backend Development Notes
-
-## Key Points
-
-- **Focus**: Server-side tasks
-- **Involves**:
-  - Working with databases
-  - Scripting
-  - Website architecture
-- **Operations**: Behind the scenes
-- **Function**: Enables the frontend of a website to function
-- **Communication**:
-  - Backend communicates with the frontend
-  - Sends and receives information to display web pages
-
-## Required Skills
-
-- **Frameworks**: Understanding and using various frameworks
-- **Languages**: Proficiency in programming languages
-- **Databases**: Knowledge and management of databases
-
 --------------------------------------------------------------------------
 
 ># What is Backend? 
@@ -106,27 +86,7 @@ In summary, the backend is essential for the overall success of a web applicatio
 
 ># Client-Server Model
 
-## Key Points
-
-- **Structure**:
-  - Distributed application with two main components:
-    - **Servers**: Provide resources/services.
-    - **Clients**: Request resources/services.
-- **Communication**:
-  - Typically over a network, but can be on the same system.
-  - Clients and servers usually run on different hardware.
-- **Roles**:
-  - **Servers**:
-    - Run server programs.
-    - Share resources with clients.
-  - **Clients**:
-    - Request content or services from servers.
-    - Do not share their own resources.
-- **Interaction**:
-  - Clients start communication.
-  - Servers wait for and respond to requests.
-
-This document explains the client-server model using a restaurant analogy to make the concept more understandable.
+The client-server model using a restaurant analogy to make the concept more understandable.
 
 ## Overview
 
@@ -797,3 +757,85 @@ While JSON Server is a useful tool for certain development scenarios, it has sev
 ## Conclusion
 
 While JSON Server is a great tool for development environments, offering simplicity and speed, it is not designed for production use or handling complex backend tasks. Developers should consider these limitations when choosing JSON Server and evaluate alternative solutions for more advanced or production-level requirements.
+
+
+># What is .mjs?
+
+`.mjs` stands for "module JavaScript" and is a file extension used in Node.js to indicate that a file should be treated as an ECMAScript module (ESM). This helps distinguish these files from CommonJS modules, which typically use the `.js` extension.
+
+## Why Use .mjs?
+
+- **Explicit Module Type:** Using the `.mjs` extension clearly indicates that the file is using ES module syntax (`import` and `export`), which is part of the ECMAScript 2015 (ES6) standard.
+- **Compatibility:** It allows projects to use both CommonJS and ES modules without ambiguity. You can continue using `.js` for CommonJS and `.mjs` for ES modules, making it easier to transition to or integrate ES modules gradually.
+
+Difference Between .mjs and .js
+.js Files:
+
+Default to CommonJS modules (require() and module.exports) unless specified otherwise.
+If the "type": "module" field is added in package.json, .js files are treated as ES modules.
+.mjs Files:
+
+Always treated as ES modules, regardless of the package.json settings.
+Use import and export syntax by default.
+Best Practices
+Use .mjs files when you want to ensure that a file is always treated as an ES module.
+
+
+># What is Dynamic Import?
+
+Dynamic import is a feature introduced in ECMAScript modules that allows modules to be loaded dynamically at runtime using the `import()` function. Unlike static imports, which are loaded at the beginning of script execution, dynamic imports can be conditionally loaded, allowing for more flexible and optimized code. This is particularly useful for loading modules only when they are needed, thereby improving the performance of the application.
+
+## Benefits of Dynamic Import
+
+- **Lazy Loading:** Only loads modules when they are required, reducing the initial loading time of an application.
+- **Code Splitting:** Helps in splitting code into smaller chunks, which can be loaded on demand, improving performance.
+- **Conditional Imports:** Allows importing modules based on conditions, making the application more modular and efficient.
+- **Improved Performance:** By only loading modules when needed, it helps reduce memory consumption and enhances application performance.
+
+
+---
+
+# npm (Node Package Manager) and Its Purpose in Node.js
+
+## What is npm?
+- **npm (Node Package Manager)** is the default package manager for Node.js.
+- It is a command-line tool that allows developers to discover, install, and manage dependencies and packages for their Node.js projects.
+- npm provides access to a vast collection of open-source JavaScript packages and modules from the npm registry.
+
+## Primary Purposes of npm in Node.js
+
+1. **Dependency Management**
+    - npm is used to manage project dependencies.
+    - It simplifies the process of installing and managing third-party libraries and modules.
+    - npm provides a central repository where packages can be discovered, installed, and updated.
+
+2. **Package Installation**
+    - npm allows for the easy installation of packages and modules using simple commands.
+    - It reads the `package.json` file in the project directory to determine necessary dependencies.
+    - Installed packages are stored in a `node_modules` folder, making them easily accessible to the application.
+
+3. **Versioning and Semantic Versioning (Semver)**
+    - npm uses semantic versioning to manage package versions.
+    - Each package has a version number associated with it, following the `major.minor.patch` format.
+    - Developers can specify version ranges or exact versions of packages in the `package.json` file.
+    - This ensures that the correct version of each dependency is installed, helping to maintain compatibility.
+
+4. **Scripts and Lifecycle Hooks**
+    - npm allows developers to define custom scripts in the `package.json` file.
+    - These scripts can automate tasks such as running tests, building the project, or starting the application.
+    - npm provides built-in lifecycle hooks (e.g., `preinstall`, `postinstall`, `prepublish`) that trigger specific scripts at different stages.
+
+5. **Publishing Packages**
+    - npm provides a mechanism for developers to publish their own packages to the npm registry.
+    - Published packages can be shared with the community, making code reusable and contributing to the open-source ecosystem.
+
+6. **Community and Collaboration**
+    - npm fosters a community-driven approach to package development.
+    - It encourages collaboration among developers, allowing them to contribute to existing packages, report issues, and share insights.
+    - npm facilitates the discovery of popular and reliable packages through ratings, downloads, and community feedback.
+
+## Summary
+- npm is a vital tool in the Node.js ecosystem.
+- It enables efficient dependency management, package installation, version control, script automation, and collaboration.
+- By using npm, developers can easily integrate third-party libraries, streamline workflows, and contribute to the growth of the open-source community.
+
