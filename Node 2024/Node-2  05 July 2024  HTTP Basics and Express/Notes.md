@@ -1,3 +1,4 @@
+Agenda : HTTP Basics & Express
 # 1. What is a server
 # 2. HTTP and HTTPS
 # 3. Application Layer Protocol
@@ -6,7 +7,6 @@
 # 6. Bandwidth
 # 7. Http verbs
 
-># Agenda  : HTTP Basics & Express
 
 ># HTTP Methods and Error Handling
 
