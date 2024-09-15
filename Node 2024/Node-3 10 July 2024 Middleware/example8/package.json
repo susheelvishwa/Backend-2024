@@ -11,9 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "example1": "file:",
     "example8": "file:",
-    "express": "^4.19.2",
+    "express": "^4.20.1",
     "nodemon": "^3.1.4"
   }
 }

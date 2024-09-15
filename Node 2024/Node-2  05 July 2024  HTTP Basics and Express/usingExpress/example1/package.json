@@ -1,5 +1,5 @@
 {
-  "name": "example4",
+  "name": "example1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "example4": "file:",
-    "express": "^4.19.2",
+    "example1": "file:",
+    "express": "^4.21.0",
     "nodemon": "^3.1.4"
   }
 }

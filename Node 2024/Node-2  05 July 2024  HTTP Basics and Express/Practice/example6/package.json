@@ -1,18 +1,16 @@
 {
-  "name": "example6",
+  "name": "my-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "example6": "file:",
-    "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "lodash": "file:./path-to-your-local-lodash",
+    "my-project": "file:"
   }
 }
