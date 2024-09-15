@@ -14,7 +14,6 @@ cover in the Live session
 # npm (Node Package Manager) and Its Purpose in Node.js
 # Managing Environment Variables in Node.js
 
-
 > ORM
 > ODM   (object Document molding)
 > SSPL  (Server side Programming langrage)
