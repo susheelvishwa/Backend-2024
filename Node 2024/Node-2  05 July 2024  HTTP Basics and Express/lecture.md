@@ -1,3 +1,29 @@
+# Fundamental Concepts of Web Technology
+## 1. What is a Server?
+## 2. HTTP and HTTPS
+## 3. Application Layer Protocol
+## 4. Internet Protocol (IP)
+## 5. SSL (Secure Sockets Layer)
+## 6. Bandwidth
+
+# HTTP Basics
+## 1. HTTP Verbs
+## 2. HTTP Methods and Error Handling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Setting Up a Server to Handle Client Requests
 
@@ -42,30 +68,6 @@
 - Simplifies the routing process (avoids excessive `if-else` statements).
 - Provides middleware for handling requests.
 - Supports HTTP methods and response handling efficiently.
-
-### Basic Express Setup:
-1. Install Express:
-   ```bash
-   npm install express
-   ```
-2. Create a basic server using Express:
-   ```javascript
-   const express = require('express');
-   const app = express();
-   const PORT = 3000;
-
-   app.get('/', (req, res) => {
-       res.send('Hello, World!');
-   });
-
-   app.listen(PORT, () => {
-       console.log(`Server is running on port ${PORT}`);
-   });
-   ```
-
-## 3. Understanding Endpoints and HTTP Verbs
-- **Endpoint**: A specific path in the API that can handle requests (e.g., `/cart`, `/users`, etc.).
-- **HTTP Verbs**: Methods used to perform actions on resources (e.g., `GET`, `POST`, `PUT`, `DELETE`).
 
 # RESTful API and CRUD Operations
 
