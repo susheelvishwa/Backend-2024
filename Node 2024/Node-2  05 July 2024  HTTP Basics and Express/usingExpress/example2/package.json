@@ -1,5 +1,5 @@
 {
-  "name": "assignments",
+  "name": "example2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,8 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "assignments": "file:",
-    "Assignments": "file:",
+    "example2": "file:",
     "express": "^4.21.0",
     "nodemon": "^3.1.4"
   }
