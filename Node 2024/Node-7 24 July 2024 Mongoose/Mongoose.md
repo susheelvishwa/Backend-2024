@@ -3,14 +3,9 @@
 1. Basics of Mongoose, including the connection, structuring and validation.
 2. Connecting the DB with an express app and performing CRUD.
 
-![Intro to Mongoose](./image/image1.png)
 ---
 
-
 ># Web Application Architecture
-
-![Intro to Mongoose](./image/image2.png)
-
 
 ## Client (Frontend)
 - The user interacts with the frontend, which sends requests to the backend.
@@ -59,8 +54,6 @@ In summary, Mongoose is used for connecting a database with a server, structurin
 - 127.0.0.1 --> ip address
 - 27017 --> port number
 
-
-![Image](./image/image3.png)
 
 ># Storing Documents in MongoDB
 
@@ -139,10 +132,7 @@ In this part, `user1` and `user2` are instances of the `User` model, each follow
 This process ensures that all documents in a MongoDB collection follow a consistent structure and allows for easy creation and management of documents using Mongoose.
 
 
-![Type casting](./image/image4.png)
-
 # Express Application Setup Flow
-![Express Application Setup Flow](./image/image5.png)
 
 
 ## 1. Creating a Basic Express Application
