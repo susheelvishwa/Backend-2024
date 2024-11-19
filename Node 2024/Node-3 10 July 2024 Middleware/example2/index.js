@@ -21,6 +21,16 @@ server.get("/school", (req, res) => {
   res.send("welcome to my school")
 })
 
+server.get("/sonu", (req, res) => {
+  console.log(5);
+  res.send("hii sonu");
+});
+
+server.get("/pillu", (req, res) => {
+  console.log(5);
+  res.send("hii pillu");
+});
+
 server.listen(PORT, () => {
   console.log(`server is running on port ${PORT}`);
 })

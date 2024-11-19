@@ -1,0 +1,281 @@
+{
+  "students": [
+    {
+      "_id": 1,
+      "name": "Susheel Vishwakarma",
+      "age": 21,
+      "gender": "male",
+      "contact_number": "555-1234",
+      "email": "susheel.v@example.com",
+      "address": {
+        "street": "123 Elm St",
+        "city": "Mumbai",
+        "state": "MH",
+        "zip": "400001"
+      },
+      "enrolled_courses": [301, 302],
+      "department_id": 501,
+      "year_of_study": 3,
+      "gpa": 3.9
+    },
+    {
+      "_id": 2,
+      "name": "Shivam Singh",
+      "age": 22,
+      "gender": "male",
+      "contact_number": "555-5678",
+      "email": "shivam.singh@example.com",
+      "address": {
+        "street": "456 Pine St",
+        "city": "Pune",
+        "state": "MH",
+        "zip": "411001"
+      },
+      "enrolled_courses": [302, 303],
+      "department_id": 501,
+      "year_of_study": 4,
+      "gpa": 3.7
+    },
+    {
+      "_id": 3,
+      "name": "Vartika Bhujbal",
+      "age": 21,
+      "gender": "female",
+      "contact_number": "555-4321",
+      "email": "vartika.bhujbal@example.com",
+      "address": {
+        "street": "789 Oak St",
+        "city": "Delhi",
+        "state": "DL",
+        "zip": "110001"
+      },
+      "enrolled_courses": [304],
+      "department_id": 502,
+      "year_of_study": 3,
+      "gpa": 3.6
+    },
+    {
+      "_id": 4,
+      "name": "Tanu Jha",
+      "age": 22,
+      "gender": "female",
+      "contact_number": "555-8765",
+      "email": "tanu.jha@example.com",
+      "address": {
+        "street": "987 Maple St",
+        "city": "Bangalore",
+        "state": "KA",
+        "zip": "560001"
+      },
+      "enrolled_courses": [303, 305],
+      "department_id": 501,
+      "year_of_study": 4,
+      "gpa": 3.8
+    },
+    {
+      "_id": 5,
+      "name": "Prachi Duby",
+      "age": 21,
+      "gender": "female",
+      "contact_number": "555-9876",
+      "email": "prachi.dube@example.com",
+      "address": {
+        "street": "123 Palm St",
+        "city": "Jaipur",
+        "state": "RJ",
+        "zip": "302001"
+      },
+      "enrolled_courses": [306],
+      "department_id": 503,
+      "year_of_study": 3,
+      "gpa": 3.5
+    },
+    {
+      "_id": 6,
+      "name": "Shriya Singh",
+      "age": 23,
+      "gender": "female",
+      "contact_number": "555-6543",
+      "email": "shriya.singh@example.com",
+      "address": {
+        "street": "456 Cedar St",
+        "city": "Chennai",
+        "state": "TN",
+        "zip": "600001"
+      },
+      "enrolled_courses": [301, 305],
+      "department_id": 503,
+      "year_of_study": 4,
+      "gpa": 3.9
+    }
+  ],
+  "professors": [
+    {
+      "_id": 101,
+      "name": "Dr. Rahul Mehta",
+      "age": 40,
+      "gender": "male",
+      "contact_number": "555-1122",
+      "email": "rahul.mehta@college.edu",
+      "department_id": 501,
+      "courses_taught": [301, 302],
+      "office_hours": {
+        "day": "Monday",
+        "time": "1-3 PM"
+      }
+    },
+    {
+      "_id": 102,
+      "name": "Dr. Anita Rao",
+      "age": 42,
+      "gender": "female",
+      "contact_number": "555-3344",
+      "email": "anita.rao@college.edu",
+      "department_id": 502,
+      "courses_taught": [303],
+      "office_hours": {
+        "day": "Wednesday",
+        "time": "10 AM - 12 PM"
+      }
+    }
+  ],
+  "courses": [
+    {
+      "_id": 301,
+      "course_name": "Introduction to Web Development",
+      "credits": 4,
+      "professor_id": 101,
+      "department_id": 501,
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "10-11:30 AM"
+      }
+    },
+    {
+      "_id": 302,
+      "course_name": "Data Structures and Algorithms",
+      "credits": 5,
+      "professor_id": 101,
+      "department_id": 501,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "2-4 PM"
+      }
+    },
+    {
+      "_id": 303,
+      "course_name": "Database Management Systems",
+      "credits": 4,
+      "professor_id": 102,
+      "department_id": 502,
+      "schedule": {
+        "days": ["Monday", "Wednesday"],
+        "time": "11 AM - 12:30 PM"
+      }
+    },
+    {
+      "_id": 304,
+      "course_name": "Artificial Intelligence",
+      "credits": 3,
+      "professor_id": 102,
+      "department_id": 502,
+      "schedule": {
+        "days": ["Tuesday", "Thursday"],
+        "time": "9-10:30 AM"
+      }
+    },
+    {
+      "_id": 305,
+      "course_name": "Cloud Computing",
+      "credits": 4,
+      "professor_id": 101,
+      "department_id": 503,
+      "schedule": {
+        "days": ["Friday"],
+        "time": "1-3 PM"
+      }
+    },
+    {
+      "_id": 306,
+      "course_name": "Mobile Application Development",
+      "credits": 4,
+      "professor_id": 102,
+      "department_id": 503,
+      "schedule": {
+        "days": ["Wednesday", "Friday"],
+        "time": "10 AM - 12 PM"
+      }
+    }
+  ],
+  "departments": [
+    {
+      "_id": 501,
+      "department_name": "Computer Science",
+      "head_of_department": "Dr. Rahul Mehta",
+      "building": "Technology Hall"
+    },
+    {
+      "_id": 502,
+      "department_name": "Information Technology",
+      "head_of_department": "Dr. Anita Rao",
+      "building": "IT Block"
+    },
+    {
+      "_id": 503,
+      "department_name": "Software Engineering",
+      "head_of_department": "Dr. Anita Rao",
+      "building": "Engineering Tower"
+    }
+  ],
+  "enrollments": [
+    {
+      "_id": 1,
+      "student_id": 1,
+      "course_id": 301,
+      "semester": "Fall 2024",
+      "grade": "A"
+    },
+    {
+      "_id": 2,
+      "student_id": 1,
+      "course_id": 302,
+      "semester": "Fall 2024",
+      "grade": "A-"
+    },
+    {
+      "_id": 3,
+      "student_id": 2,
+      "course_id": 302,
+      "semester": "Fall 2024",
+      "grade": "B+"
+    },
+    {
+      "_id": 4,
+      "student_id": 3,
+      "course_id": 304,
+      "semester": "Fall 2024",
+      "grade": "B"
+    },
+    {
+      "_id": 5,
+      "student_id": 4,
+      "course_id": 305,
+      "semester": "Fall 2024",
+      "grade": "A-"
+    },
+    {
+      "_id": 6,
+      "student_id": 5,
+      "course_id": 306,
+      "semester": "Fall 2024",
+      "grade": "B+"
+    },
+    {
+      "_id": 7,
+      "student_id": 6,
+      "course_id": 301,
+      "semester": "Fall 2024",
+      "grade": "A"
+    }
+  ]
+}

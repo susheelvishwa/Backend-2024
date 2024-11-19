@@ -121,6 +121,7 @@ are designed for flexibility and scalability with unstructured or semi-structure
 
 - **Adoption by Companies**: Many companies are using MongoDB because of its flexibility. This widespread adoption suggests that MongoDB is a reliable and trusted solution for managing data.
 
+
 ## Example Document
 
 The image also includes an example of a MongoDB document, which showcases its flexible schema design. The document is presented in JSON-like format with key-value pairs:
@@ -141,11 +142,12 @@ This example highlights how MongoDB can store various types of data in a single 
 
 ># Basic Command
 
-![CRUD Operations on Documents](./img/image6.png)
+![CRUD Operations on Documents](./img/image7.png)
 
 ># MongoDB Hierarchy and Book Details Example
 
 ## MongoDB Hierarchy
+![flow](./img/image4.png)
 
 1. **Database**: The top level in MongoDB's hierarchy. A single MongoDB server can have multiple databases, each serving different purposes.
 2. **Collections**: Inside a database, we have collections. Collections are analogous to tables in a relational database, storing a group of related documents.
@@ -240,7 +242,7 @@ This hierarchy and example illustrate how MongoDB organizes data from databases 
 
 ># CRUD Operations on Documents
 
-![CRUD Operations on Documents](./img/image4.png)
+![CRUD Operations on Documents](./img/image5.png)
 
 CRUD stands for Create, Read, Update, and Delete. These are the four basic operations for managing data in a database. Here’s a detailed explanation of each operation with examples.
 
@@ -372,9 +374,7 @@ Let's walk through a practical example using a library database:
      db.books.deleteMany({ author: "Various Authors" })
      ```
 
-># Comparison & Logical Operators
 
-![Comparison & Logical Operators](./img/image5.png)
 
 
 ># CRUD Operations in MongoDB
@@ -410,8 +410,156 @@ CRUD stands for Create, Read, Update, and Delete. These are the four basic opera
 
 ## Summary
 - **Create** operations use `insertOne` and `insertMany`.
+
+ ``` db.users.insertOne({name:"susheel", org:"Home"})```
+ ``` db.users.insertMany([{},{},{}])```
 - **Read** operations use `find()`, `find({filter})`, and `findOne`.
 - **Update** operations use `updateOne` and `updateMany`, requiring both a filter and the update details.
 - **Delete** operations use `deleteOne` and `deleteMany`, requiring only a filter.
 
 this is all about CRUD operations in mongoDB
+
+># Comparison & Logical Operators
+![Comparison & Logical Operators](./img/image6.png)
+
+## Comparison Operators
+
+In MongoDB, comparison operators help filter data based on specific criteria:
+
+| Symbol | MongoDB Syntax |
+|--------|----------------|
+| <=     | lte            |
+| <      | lt             |
+| >=     | gte            |
+| >      | gt             |
+| ==     | eq             |
+| !=     | ne             |
+
+
+# MongoDB Comparison and Logical Operator Practice
+
+## MongoDB Practice Queries:
+
+1. **Find all friends with health greater than 80**:
+   ```js
+   db.friends.find({ health: { $gt: 80 } })
+   ```
+
+2. **Find a specific friend by name (e.g., Vartika)**:
+   ```js
+   db.friends.find({ name: "Vartika" })
+   ```
+
+3. **Find friends whose villains' health is greater than 65**:
+   ```js
+   db.friends.find({ "villains.health": { $gt: 65 } })
+   ```
+
+4. **Find friends who have a favorite color of "blue" or "green"**:
+   ```js
+   db.friends.find({ "metadata.favouriteColor": { $in: ["blue", "green"] } })
+   ```
+
+5. **Find friends who are younger than 27 years**:
+   ```js
+   db.friends.find({ "metadata.age": { $lt: 27 } })
+   ```
+
+6. **Find friends whose health is less than or equal to 85 and are older than 26 years**:
+   ```js
+   db.friends.find({ $and: [{ health: { $lte: 85 } }, { "metadata.age": { $gt: 26 } }] })
+   ```
+
+7. **Find friends with either a power of "leadership" or a villain named "Doubt"**:
+   ```js
+   db.friends.find({ $or: [{ powers: "leadership" }, { "villains.name": "Doubt" }] })
+   ```
+
+8. **Find friends whose health is not equal to 90**:
+   ```js
+   db.friends.find({ health: { $ne: 90 } })
+   ```
+
+9. **Find friends whose age is between 25 and 28**:
+   ```js
+   db.friends.find({ "metadata.age": { $gte: 25, $lte: 28 } })
+   ```
+
+10. **Find friends with a favorite color other than "blue"**:
+    ```js
+    db.friends.find({ "metadata.favouriteColor": { $ne: "blue" } })
+    ```
+
+# Advanced Data Filtering in MongoDB
+
+
+### Example Queries:
+
+- **Find heroes with health ≤ 50**:
+    ```js
+    db.heroes.find({health: {$lte:50}}).pretty()
+    ```
+
+- **Find heroes with health not equal to 86**:
+    ```js
+    db.heroes.find({health: {$ne:86}}).pretty()
+    ```
+
+- For equality comparison (`==`), you don't need to use `eq`:
+    ```js
+    db.heroes.find({health:86})
+    ```
+
+## Logical Operators
+
+Logical operators such as `and` and `or` are used for more advanced data filtering.
+
+### Example Queries:
+
+- **Find all users with `org` as 'Masai' and `country` as 'India'**:
+    ```js
+    db.users.find({$and:[{org:"Masai"}, {country:"India"}]}).pretty()
+    ```
+
+- **Find heroes with health between 40 and 60**:
+    ```js
+    db.heroes.find({$and:[{health:{$gt:40}}, {health:{$lt:60}}]}).pretty()
+    ```
+
+## Updating Documents
+
+- **Add 'country: India' to all user documents**:
+    ```js
+    db.users.updateMany({},{$set: {country:"India"}})
+    ```
+
+## Limiting and Skipping Results
+
+You can limit and skip results for better control over data retrieval, useful for **pagination**.
+
+- **Limit to 2 documents**:
+    ```js
+    db.heroes.find().limit(2).pretty()
+    ```
+
+- **Skip 2 documents and then limit to the next 2**:
+    ```js
+    db.users.find({country:"India"}).skip(2).limit(2).pretty()
+    ```
+
+## Sorting
+
+Sort data in **ascending** or **descending** order.
+
+- **Sort heroes by health in ascending order**:
+    ```js
+    db.heroes.find().sort({health:1}).pretty()
+    ```
+
+- **Sort in descending order**:
+    ```js
+    db.heroes.find().sort({health:-1}).pretty()
+    ```
+
+**Note:** Sorting works with both numbers and alphabets based on **ASCII** values. Be mindful of case sensitivity.
+"""
